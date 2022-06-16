@@ -13,8 +13,14 @@ extension URL {
     }
     
     init<Value>(_ host: String, _ apiKey: String, _ request: Request<Value>) {
-        let queryItems = [ ("api_key", apiKey) ]
+        var queryItems = [ ("api_key", apiKey) ]
             .map { name, value in URLQueryItem(name: name, value: "\(value)") }
+        
+        for queryParam in request.queryParams
+        {
+            let url_query_item = URLQueryItem(name: queryParam.key, value: queryParam.value)
+            queryItems.append(url_query_item)
+        }
         
         let url = URL(string: host)!
             .appendingPathComponent(request.path)
@@ -38,7 +44,7 @@ final class APIManager {
     }
     
     func execute<Value: Decodable>(_ request: Request<Value>, completion: @escaping (Result<Value, APIError>) -> Void) {
-        urlSession.dataTask(with: urlRequest(for: request)) { responseData, response, _ in
+        urlSession.dataTask(with: urlRequest(for: request)) { responseData, response, error in
             if let data = responseData {
                 let response: Value
                 do {
@@ -47,7 +53,6 @@ final class APIManager {
                     completion(.failure(.parsingError))
                     return
                 }
-                
                 completion(.success(response))
             } else {
                 completion(.failure(.networkError))

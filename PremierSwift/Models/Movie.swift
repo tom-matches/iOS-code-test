@@ -20,6 +20,6 @@ struct Movie: Decodable {
 
 extension Movie {
     static var topRated: Request<Page<Movie>> {
-        return Request(method: .get, path: "/movie/top_rated")
+        return Request(method: .get, path: "/movie/top_rated", pars: [:])
     }
 }
