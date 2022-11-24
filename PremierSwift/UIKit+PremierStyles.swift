@@ -9,6 +9,7 @@ extension UIColor {
     }
     
     enum Background {
+        static let main: UIColor = UIColor.whiteSmoke
         static let charcoal: UIColor = UIColor.charcoal
     }
     
@@ -19,6 +20,7 @@ extension UIColor {
     private static let charcoal: UIColor = UIColor(red: 22 / 255.0, green: 22 / 255.0, blue: 22 / 255.0, alpha: 1)
     private static let grey: UIColor = UIColor(red: 81 / 255.0, green: 81 / 255.0, blue: 83 / 255.0, alpha: 1)
     private static let popsicle40: UIColor = UIColor(red: 156 / 255.0, green: 44 / 255.0, blue: 243 / 255.0, alpha: 1)
+    private static let whiteSmoke: UIColor = UIColor(red: 248 / 255.0, green: 248 / 255.0, blue: 248 / 255.0, alpha: 1)
     private static let white: UIColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
 }
 
@@ -30,6 +32,7 @@ extension UIFont {
     }
     
     enum Body {
+        static var medium: UIFont = UIFont(name: "Poppins-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .regular)
         static var small: UIFont = UIFont(name: "Poppins-Regular", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .regular)
         static var smallSemiBold: UIFont = UIFont(name: "Poppins-SemiBold", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .semibold)
     }

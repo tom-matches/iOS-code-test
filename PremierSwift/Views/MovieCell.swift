@@ -2,7 +2,7 @@ import UIKit
 
 final class MovieCell: UITableViewCell {
     
-    let columnSpacing: CGFloat = 16
+    let columnSpacing: CGFloat = 20
     let posterSize = CGSize(width: 92, height: 134)
     
     let coverImage = UIImageView()
@@ -68,8 +68,8 @@ final class MovieCell: UITableViewCell {
         NSLayoutConstraint.activate([
             containerStackView.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
             containerStackView.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor),
-            containerStackView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor),
-            containerStackView.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor),
+            containerStackView.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor, constant: 10),
+            containerStackView.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -10),
             
             coverImage.widthAnchor.constraint(equalToConstant: posterSize.width),
             coverImage.heightAnchor.constraint(equalToConstant: posterSize.height)
@@ -87,6 +87,7 @@ final class MovieCell: UITableViewCell {
             coverImage.image = nil
         }
     }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
     }

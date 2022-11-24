@@ -11,6 +11,7 @@
 		4A7CA14B275A35D500A75CE4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A7CA149275A35D500A75CE4 /* Poppins-Regular.ttf */; };
 		4A7CA14D275A387700A75CE4 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CA14C275A387700A75CE4 /* TagView.swift */; };
 		4A7CA14F275A62C300A75CE4 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CA14E275A62C300A75CE4 /* UIBarButtonItem.swift */; };
+		4A7CA151275A77C800A75CE4 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CA150275A77C800A75CE4 /* UISearchBar.swift */; };
 		7D13E747202644A9007D2E54 /* CellAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E746202644A9007D2E54 /* CellAdditions.swift */; };
 		7D13E749202645CE007D2E54 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D13E748202645CE007D2E54 /* APIManager.swift */; };
 		7D13E74B20264726007D2E54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D13E74A20264726007D2E54 /* Localizable.strings */; };
@@ -21,6 +22,7 @@
 		7D83123520270F8D0021AC3B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D83123420270F8D0021AC3B /* Request.swift */; };
 		7D83123A20271CB90021AC3B /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D83123920271CB90021AC3B /* UIImageView.swift */; };
 		7D83123C20271E850021AC3B /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D83123B20271E850021AC3B /* APITests.swift */; };
+		F4348FA4230EDFE400198E80 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4348FA3230EDFE300198E80 /* SearchResultsViewController.swift */; };
 		F4D99F002281B55D00C20D0E /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D99EFF2281B55D00C20D0E /* MovieDetailsViewController.swift */; };
 		F81DFE481F8B8BB700528F3F /* UIKit+PremierStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */; };
 		F82C2C2422E0D5D8003E8FC4 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82C2C2322E0D5D8003E8FC4 /* MovieDetails.swift */; };
@@ -48,6 +50,7 @@
 		4A7CA149275A35D500A75CE4 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		4A7CA14C275A387700A75CE4 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		4A7CA14E275A62C300A75CE4 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		4A7CA150275A77C800A75CE4 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		7D13E746202644A9007D2E54 /* CellAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAdditions.swift; sourceTree = "<group>"; };
 		7D13E748202645CE007D2E54 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7D13E74A20264726007D2E54 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		7D83123420270F8D0021AC3B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		7D83123920271CB90021AC3B /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		7D83123B20271E850021AC3B /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		F4348FA3230EDFE300198E80 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		F4D99EFF2281B55D00C20D0E /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+PremierStyles.swift"; sourceTree = "<group>"; };
 		F82C2C2322E0D5D8003E8FC4 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				7D13E75320264B07007D2E54 /* UIView.swift */,
 				7D83123920271CB90021AC3B /* UIImageView.swift */,
 				4A7CA14E275A62C300A75CE4 /* UIBarButtonItem.swift */,
+				4A7CA150275A77C800A75CE4 /* UISearchBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				F4D99EFF2281B55D00C20D0E /* MovieDetailsViewController.swift */,
 				F82C2C2722E22731003E8FC4 /* LoadingViewController.swift */,
 				F82C2C2922E22775003E8FC4 /* MovieDetailsDisplayViewController.swift */,
+				F4348FA3230EDFE300198E80 /* SearchResultsViewController.swift */,
 				F81DFE471F8B8BB700528F3F /* UIKit+PremierStyles.swift */,
 				F840A5E61D945CF9009325F7 /* Assets.xcassets */,
 				F840A5E81D945CF9009325F7 /* LaunchScreen.storyboard */,
@@ -307,12 +313,14 @@
 			files = (
 				4A7CA14D275A387700A75CE4 /* TagView.swift in Sources */,
 				7D13E75420264B07007D2E54 /* UIView.swift in Sources */,
+				F4348FA4230EDFE400198E80 /* SearchResultsViewController.swift in Sources */,
 				F82C2C2422E0D5D8003E8FC4 /* MovieDetails.swift in Sources */,
 				F82C2C2822E22731003E8FC4 /* LoadingViewController.swift in Sources */,
 				7D13E751202648D1007D2E54 /* MovieCell.swift in Sources */,
 				F4D99F002281B55D00C20D0E /* MovieDetailsViewController.swift in Sources */,
 				F82C2C2622E1FB1A003E8FC4 /* Page.swift in Sources */,
 				7D13E76820265222007D2E54 /* Movie.swift in Sources */,
+				4A7CA151275A77C800A75CE4 /* UISearchBar.swift in Sources */,
 				7D83123A20271CB90021AC3B /* UIImageView.swift in Sources */,
 				F81DFE481F8B8BB700528F3F /* UIKit+PremierStyles.swift in Sources */,
 				4A7CA14F275A62C300A75CE4 /* UIBarButtonItem.swift in Sources */,
